@@ -8,7 +8,18 @@
       -->
     <style>
       a{
+        color: black;
+        text-decoration: none;
+      }
+      .seen{
+        color: blue;
+      }
+      #activate{
         color: red;
+      }
+      h1{
+        font-size:50px;
+        text-align:center;
       }
     </style>
     <title>WEB1</title>
@@ -16,8 +27,8 @@
   <body>
     <h1><a href="index.html">WEB</a></h1>
     <ol>
-      <li><a href="1.html">HTML</a></li>
-      <li><a href="2.html">CSS</a></li>
+      <li><a href="1.html"class="seen">HTML</a></li>
+      <li><a href="2.html"class="seen" id="activate">CSS</a></li>
       <li><a href="3.html">JavaScript</a></li>
     </ol>
     <br><br>
@@ -36,4 +47,33 @@
       <li>css 사용하는 것이 더 효율적. 예를 들어, 1억개의 a의 색을 모두 바꿀 때 style안 코드만 바꿔주면 된다.</li>
     </ol>
   </p>
+  <h3>2. css의 사용</h3>
+  <p>
+    html과 css는 완전히 다른 언어이다. css 언어가 어느 부분인지 알려주어야 한다!!
+    <ul>
+      <li>style 태그 사용 => 세미콜론(;)사용!! 속성을 주기 위한 <u>selector(선택자)</u>필요/ 속성<u>property(속성)</u> 필요 </li>
+      <li>속성 사용 => 태그 안에 (style="color: red")라고 적는다. <strong>선택자 필요 없음!!</strong> </li>
+    </ul><br>
+    <strong>css 코드</strong>
+    <ol>
+      <li>색 변화= color:red</li>
+      <li>장식(밑줄 등) 변화= text-decoration: none/underline</li>
+      <li>텍스트 크기= font-size: 60px </li>
+      <li>텍스트 정렬= text-align: center</li>
+    </ol>
+  </p>
+  <h3>3. 선택자 </h3>
+  <p>
+    class 를 만들어 여러개의 태그를 공동으로 관리할 수 있다.
+    <br>
+    <strong style="font-size: 20px"> → 순위: id>클래스>태그</strong><br>
+    <ul>
+      <li><strong>id    : #activate</strong></li>
+      <li><strong>class : .seen</strong></li>
+      <li><strong>tag   : a</strong></li>
+    </ul>
+    <br>같은 순위라면 더 아래쪽에 적은 것으로 적용
+  </p>
+
+<br><br><br><br>
 </html>
