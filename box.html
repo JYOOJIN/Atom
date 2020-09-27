@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>box</title>
+    <style>
+
+      /*black level element*/
+      /*화면 전체를 사용함*/
+      h1{
+        border-width:5px;
+        border-color:red;
+        border-style:solid;
+
+        padding: 20px; /*글자와 박스 간격*/
+        margin:20px; /*박스 밖의 간격*/
+        width: 100px; /*박스 폭 변경*/
+
+        /*display:inline; 하면 inline*/
+        /*display:none; 하면 화면에서 사라짐*/
+      }
+
+      /*inline level element*/
+      /*그 라인을 벗어나지 않음*/
+      a{
+        /*중복 줄여서 쓰기. 순서는 상관x*/
+        border-width:5px;
+        border-color:red;
+        border-style:solid;
+        /*display:block; 하면 block*/
+      }
+
+      /*중복을 없앰
+      h1,a{
+          border:5px solid red;
+      }*/
+
+
+    </style>
+  </head>
+  <body>
+    <h1>CSS</h1>
+    <h1>CSS</h1>
+
+    Cascading Style Sheets (<a href="https://opentutorials.org/course/3086/18319">CSS</a>) is a style sheet language used for describing the presentation of a document written in a markup language.[1] Although most often used to set the visual style of web pages and user interfaces
+    written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone
+    technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
+  </body>
+</html>
