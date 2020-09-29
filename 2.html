@@ -6,43 +6,9 @@
     <!--
     style 태그를 통해 디자인임을 표시함.
       -->
-    <style>
-      #grid{
-        display: grid;
-        grid-template-columns: 150px 1fr;
-      }
-      a{
-        color: black;
-        text-decoration: none;
-      }
-      .seen{
-        color: blue;
-      }
-      #activate{
-        color: red;
-      }
-      h1{
-        font-size:50px;
-        text-align:center;
-        border-bottom: 2px solid gray;
-        margin: 0;
-        padding: 20px;
-      }
 
-      #grid ol{
-        border-right:2px solid gray;
-        width:100px;
-        margin: 0;
-        padding: 20px;
-        padding-left: 33px;
-
-      }
-      #article{
-        padding-left: 25px;
-      }
-
-    </style>
     <title>WEB1</title>
+    <link rel="stylesheet" href="style.css">
   </head>
 
 
@@ -50,7 +16,7 @@
     <h1><a href="index.html">WEB</a></h1>
 
     <div id="grid">
-      <div>
+      <div id="olol">
         <ol id="head">
           <li><a href="1.html"class="seen">HTML</a></li>
           <li><a href="2.html"class="seen" id="activate">CSS</a></li>
@@ -58,7 +24,6 @@
         </ol>
         <br><br>
       </div>
-
 
       <div id="article">
         <h2>CSS</h2>
@@ -81,10 +46,10 @@
         <h3>2. css의 사용</h3>
         <p>
           html과 css는 완전히 다른 언어이다. css 언어가 어느 부분인지 알려주어야 한다!!
-          <ul>
+          <ol>
             <li>style 태그 사용 => 세미콜론(;)사용!! 속성을 주기 위한 <u>selector(선택자)</u>필요/ 속성<u>property(속성)</u> 필요 </li>
             <li>속성 사용 => 태그 안에 (style="color: red")라고 적는다. <strong>선택자 필요 없음!!</strong> </li>
-          </ul><br>
+          </ol><br>
           <strong>css 코드</strong>
           <ol>
             <li>색 변화= color:red</li>

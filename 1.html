@@ -3,90 +3,97 @@
 <head>
   <title>WEB1 - html</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <h1><a href="index.html"title="index">WEB</a></h1>
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-  </ol>
-  <br><br>
 
-  <h2>HTML</h2>
+  <div id="grid">
+    <div id="olol">
+      <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+      </ol>
+      <br><br>
+    </div>
 
-  <p><a href="https://www.w3.org/TR/html5/"target="_blank"title="html specification">Hypertext Markup Language (HTML)</a> is the standard markup language
-  for <strong>creating <u>web pages</u> and <u>web applications.</u></strong></p>
-  <p style="margin-top:20px;">HTML elements are the building blocks of HTML pages. With HTML constructs,
-  images and other objects, such as interactive forms, may be embedded into the rendered page.
-  It provides a means to create structured documents by denoting structural semantics
-  for text such as headings, paragraphs, lists, links, quotes and other items.
-  HTML elements are delineated by tags, written using angle brackets.</p>
-  <p style="margin-top:30px;">HTML elements are the building blocks of HTML pages.
-  With HTML constructs, images and other objects, such as interactive forms, may be
-  embedded into the rendered page. It provides a means to create structured documents
-  by denoting structural semantics for text such as headings, paragraphs, lists, links,
-  quotes and other items. HTML elements are delineated by tags, written using angle brackets. </p>
-  <img src="lion.png"width="30%">
+    <div id="article">
+      <h2>HTML</h2>
 
-<h3>HTML 사용방법</h3>
-  <strong>1. 태그</strong>
-  <ul>
-    <li>strong: 글자 강조</li>
-    <li>u: 밑줄</li>
-    <li>br: 한 줄 띄기</li>
-    <li>p: 단락(css로 간격 조절 가능)</li>
-    <li>h1,h2,h3,h4,h5,h6: 제목</li>
-    <li>img: 사진 넣기(src="",width="%"로 조절가능)</li>
-    <li>a: 링크(href=""로 지정)</li>
-    <li>head & body: 제목/본문</li>
-    <li>ul & li: 정렬안된 리스트</li>
-    <li>ol & li: 정렬된 리스트</li>
-  </ul>
+      <p><a href="https://www.w3.org/TR/html5/"target="_blank"title="html specification">Hypertext Markup Language (HTML)</a> is the standard markup language
+      for <strong>creating <u>web pages</u> and <u>web applications.</u></strong></p>
+      <p style="margin-top:20px;">HTML elements are the building blocks of HTML pages. With HTML constructs,
+      images and other objects, such as interactive forms, may be embedded into the rendered page.
+      It provides a means to create structured documents by denoting structural semantics
+      for text such as headings, paragraphs, lists, links, quotes and other items.
+      HTML elements are delineated by tags, written using angle brackets.</p>
+      <p style="margin-top:30px;">HTML elements are the building blocks of HTML pages.
+      With HTML constructs, images and other objects, such as interactive forms, may be
+      embedded into the rendered page. It provides a means to create structured documents
+      by denoting structural semantics for text such as headings, paragraphs, lists, links,
+      quotes and other items. HTML elements are delineated by tags, written using angle brackets. </p>
+      <img src="lion.png"width="30%">
 
-<h3>원시웹 만들기</h3>
+    <h3>HTML 사용방법</h3>
+      <strong>1. 태그</strong>
+      <ul>
+        <li>strong: 글자 강조</li>
+        <li>u: 밑줄</li>
+        <li>br: 한 줄 띄기</li>
+        <li>p: 단락(css로 간격 조절 가능)</li>
+        <li>h1,h2,h3,h4,h5,h6: 제목</li>
+        <li>img: 사진 넣기(src="",width="%"로 조절가능)</li>
+        <li>a: 링크(href=""로 지정)</li>
+        <li>head & body: 제목/본문</li>
+        <li>ul & li: 정렬안된 리스트</li>
+        <li>ol & li: 정렬된 리스트</li>
+      </ul>
 
-<p>
-  <strong>1. 인터넷 vs 웹</strong> <br><br> 인터넷이 도시라면 웹은 그 위의 빌딩 하나라고 할 수 있다. 인터넷이 널리 쓰이게 된것도 웹의 탄생 이후이다. <br>
-  세계 최초이 웹 브라우저가 탄생하는데, 그 이름이 월드 와이드 웹(World Wide Web)이다. 그 이후로 웹이 대중화되었다.
-  <br>그렇게 처음으로 창조한 웹의 최초의 모습을 "원시웹"이라고 부른다.
-</p>
+    <h3>원시웹 만들기</h3>
 
-<p>이제 내가 만든 웹 페이지를 인터넷을 통해 모든 사람들이 볼수 있도록 만들어보자.
-  <br>인터넷이 동작하기 위해서는 최소 컴퓨터 2대가 필요하다.<br>
-  <img src="server.jpeg" alt="30%">
-  <ul>
-    <li><strong>web browser: 요청 -> client</strong></li>
-    <li><strong>web server: 응답 -> server</strong></li>
-  </ul>
-</p>
+    <p>
+      <strong>1. 인터넷 vs 웹</strong> <br><br> 인터넷이 도시라면 웹은 그 위의 빌딩 하나라고 할 수 있다. 인터넷이 널리 쓰이게 된것도 웹의 탄생 이후이다. <br>
+      세계 최초이 웹 브라우저가 탄생하는데, 그 이름이 월드 와이드 웹(World Wide Web)이다. 그 이후로 웹이 대중화되었다.
+      <br>그렇게 처음으로 창조한 웹의 최초의 모습을 "원시웹"이라고 부른다.
+    </p>
 
-<p>
-<strong>2. 웹호스팅</strong> <br><br> 웹 호스팅 업체 중 <a href="https://github.com"target="_blank">github </a> 의 pages 기능 사용하기 <br>
-내가 만든 사이트의 주소: <a href="https://jyoojin.github.io/Atom/."target="_blank">https://jyoojin.github.io/Atom/.</a>
-<br>이제 전세계 사람들에게 내가만든 웹페이지를 보여줄 수 있다!!
-</p>
+    <p>이제 내가 만든 웹 페이지를 인터넷을 통해 모든 사람들이 볼수 있도록 만들어보자.
+      <br>인터넷이 동작하기 위해서는 최소 컴퓨터 2대가 필요하다.<br>
+      <img src="server.jpeg" alt="30%">
+      <ul>
+        <li><strong>web browser: 요청 -> client</strong></li>
+        <li><strong>web server: 응답 -> server</strong></li>
+      </ul>
+    </p>
 
-<p>
-  my가 내컴퓨터, visitor가 내 웹페이지 보고 싶어하는 사람이다.<br> <img src="11.jpeg"width="50%"><br>
-  github의 pages 기능을 이용해서, github의 서버 컴퓨터에 웹서버가 켜지고, 우리에게 웹서버의 주소를 알려준다.<br>
-  visitor는 나의 컴퓨터가 아닌 github의 컴퓨터에 설치된 웹서버에 접속하게된다. <br> <img src="12.jpeg" width="50%"><br>
-</p>
+    <p>
+    <strong>2. 웹호스팅</strong> <br><br> 웹 호스팅 업체 중 <a href="https://github.com"target="_blank">github </a> 의 pages 기능 사용하기 <br>
+    내가 만든 사이트의 주소: <a href="https://jyoojin.github.io/Atom/."target="_blank">https://jyoojin.github.io/Atom/.</a>
+    <br>이제 전세계 사람들에게 내가만든 웹페이지를 보여줄 수 있다!!
+    </p>
 
-<p>
-  <strong>3.아파치 사용</strong> <br><br>
- 모두 내 컴퓨터에 있는 index.html 파일을 요청하는 주소이다.
-  <ul>
-    <li>http://localhost/index.html</li>
-    <li>http://127.0.0.1/index.html</li>
-  </ul>
-  <br>파일을 직접 여는 것보다는 웹서버를 이용해서 여는 것이 낫다. 이것은 그 차이점이다.<br>
-  <img src="web.jpeg" width="50%"><br>
-  <<<<<<<<<<<<<내 ip 주소: 211.177.78.73 >>>>>>>>>>>>>>>>>>>><br>
-</p>
+    <p>
+      my가 내컴퓨터, visitor가 내 웹페이지 보고 싶어하는 사람이다.<br> <img src="11.jpeg"width="50%"><br>
+      github의 pages 기능을 이용해서, github의 서버 컴퓨터에 웹서버가 켜지고, 우리에게 웹서버의 주소를 알려준다.<br>
+      visitor는 나의 컴퓨터가 아닌 github의 컴퓨터에 설치된 웹서버에 접속하게된다. <br> <img src="12.jpeg" width="50%"><br>
+    </p>
 
+    <p>
+      <strong>3.아파치 사용</strong> <br><br>
+     모두 내 컴퓨터에 있는 index.html 파일을 요청하는 주소이다.
+      <ul>
+        <li>http://localhost/index.html</li>
+        <li>http://127.0.0.1/index.html</li>
+      </ul>
+      <br>파일을 직접 여는 것보다는 웹서버를 이용해서 여는 것이 낫다. 이것은 그 차이점이다.<br>
+      <img src="web.jpeg" width="50%"><br>
+      <<<<<<<<<<<<<내 ip 주소: 211.177.78.73 >>>>>>>>>>>>>>>>>>>><br>
+    </p>
+  </div>
 
+  </div>
 
 <br><br><br><br>
 </body>
