@@ -4,52 +4,15 @@
     <meta charset="utf-8">
     <title>WEB1</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <script>
-
-    var Body={
-      setColor: function(color){
-        document.querySelector('body').style.color = color;
-      },
-      setBackcolor:function(color){
-        document.querySelector('body').style.backgroundColor = color;
-      }
-    }
-
-    var link={
-      setColor: function(color){
-        var alist=document.querySelectorAll('a');
-        var i=0;
-        while(i < alist.length){
-          alist[i].style.color = color;
-          i = i + 1;
-        }
-      }
-    }
-
-
-      function nigthday_handler(self){
-        var target=document.querySelector('body');
-
-        if(self.value==='night'){
-          self.value='day';
-          Body.setBackcolor('black');
-          Body.setColor('white');
-          link.setColor('powderblue');
-        }else{
-          self.value='night';
-          Body.setBackcolor('white');
-          Body.setColor('black');
-          link.setColor('blue');
-        }
-      }
-    </script>
+    <script src="color.js"></script>
 
   </head>
   <body>
     <h1><a href="index.html">WEB</a></h1>
 
-    <input  type="button" value="nigth" onclick="
+    <input  type="button" value="night" onclick="
     nigthday_handler(this);
     ">
 

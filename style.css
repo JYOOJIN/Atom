@@ -4,7 +4,7 @@
 }
 a{
   color: blue;
-  text-decoration: none;
+  text-decoration: underline;
 }
 .seen{
   color: blue;
