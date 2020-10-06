@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2><u>※html에서는 잘못된 부분이 있으면 아예 페이지에 나타나지 않는다※</u></h2>
+    <h1>Object</h1>
+
+
+    <p>객체는 이름있는 정리정돈 상자이다.<br>
+    쓰레기통이라면 순서없이 집어넣겠지만 객체에 넣은 것은
+    다시 사용할 것이기 때문에 무작위로 집어넣지 않고
+    물건을 수납상자에 넣으면서 이름을 지어준다. <br>
+    </p>
+
+    <h2>Create</h2>
+    <p>객체를 생성하고 추가하고 꺼내는 방법 <br>
+      script안에 중괄호를 사용해 객체를 생성하고 <br>
+      그안에 이름을 붙여 데이터를 정의한다.
+    </p>
+
+    <script>
+
+      var cow = {
+        "me":"yoojin",
+        "you":"jiwon"
+      };
+
+      document.write("my name : "+cow.me+"<br>");
+      document.write("your name : "+cow.you+"<br>");
+      cow.we = "amoomalangie";
+      document.write("we : "+cow.we+"<br>");
+      cow.com_brilliant="playground";
+      document.write("school : "+cow.com_brilliant+"<br>");
+      cow["caps leader"]="thirty-two";
+      document.write("caps leader : "+cow["caps leader"]+"<br>");
+    </script>
+
+    <h2>Iterator</h2>
+    <script>
+      for(var key in cow){ //key는 이름을 가져온다
+        document.write(key+" : "+cow[key]+"<br>");
+      }
+    </script>
+
+    <h2>Property&Method</h2>
+    <p>객체에 소속된 함수를 method라고 하고, 객체에 소속된 변수를 property라고 한다. <br>
+      <strong>객체에 여러 메소드를 넣을 때는 쉼표로 구분한다</strong>
+    </p>
+    <script>
+      cow.showall = function(){
+        for(var key in this){
+          document.write(key+" : "+this[key]+"<br>");
+        }
+      }
+      cow.showall();
+    </script>
+<br><br><br>
+  </body>
+</html>

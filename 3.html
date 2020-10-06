@@ -6,31 +6,45 @@
     <link rel="stylesheet" href="style.css">
 
     <script>
+
+    var Body={
+      setColor: function(color){
+        document.querySelector('body').style.color = color;
+      },
+      setBackcolor:function(color){
+        document.querySelector('body').style.backgroundColor = color;
+      }
+    }
+
+    var link={
+      setColor: function(color){
+        var alist=document.querySelectorAll('a');
+        var i=0;
+        while(i < alist.length){
+          alist[i].style.color = color;
+          i = i + 1;
+        }
+      }
+    }
+
+
       function nigthday_handler(self){
         var target=document.querySelector('body');
 
         if(this.value==='night'){
-          target.style.backgroundColor='black';
-          target.style.color='white';
+          Body.setBackcolor('black');
+          Body.setColor('white');
           this.value='day';
+          link.setColor('powderblue');
 
-          var alist=document.querySelectorAll('a');
-          var i=0;
-          while(i < alist.length){
-            alist[i].style.color = 'powderblue';
-            i = i + 1;
-          }
+
         }else{
-          target.style.backgroundColor='white';
-          target.style.color='black';
+
+          Body.setBackcolor('white');
+          Body.setColor('black');
           this.value='night';
 
-          var alist2=document.querySelectorAll('a');
-          var i=0;
-          while(i < alist2.length){
-            alist2[i].style.color='blue';
-            i = i + 1;
-          }
+          link.setColor('blue');
         }
       }
     </script>
