@@ -31,29 +31,25 @@
       function nigthday_handler(self){
         var target=document.querySelector('body');
 
-        if(this.value==='night'){
+        if(self.value==='night'){
+          self.value='day';
           Body.setBackcolor('black');
           Body.setColor('white');
-          this.value='day';
           link.setColor('powderblue');
-
-
         }else{
-
+          self.value='night';
           Body.setBackcolor('white');
           Body.setColor('black');
-          this.value='night';
-
           link.setColor('blue');
         }
       }
     </script>
 
   </head>
-  <body >
+  <body>
     <h1><a href="index.html">WEB</a></h1>
 
-    <input  type="button" value="night" onclick="
+    <input  type="button" value="nigth" onclick="
     nigthday_handler(this);
     ">
 
